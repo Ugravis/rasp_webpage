@@ -4,7 +4,7 @@
 
 To display data like component characteristics, uptime, CPU heat, etc.
 
-> [!NOTE] Modules
-> - **Frontend** with React and Tailwind (`Node`, `/frontend`)
+> [!NOTE]
+> - **Frontend** with React Ts and Tailwind (`Node`, `/frontend`)
 > 
 > - **Backend** with FastAPI (`Python`, `/backend`)
