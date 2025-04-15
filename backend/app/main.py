@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from .dependencies.system_info import get_system_info
 
 app = FastAPI(
   title="Rasp web page",
@@ -6,6 +7,6 @@ app = FastAPI(
   version="0.0.1"
 )
 
-@app.get('/')
+@app.get('/system-info')
 async def root():
-  return { "message": "Hello world from FastAPI" }
+  return get_system_info()
