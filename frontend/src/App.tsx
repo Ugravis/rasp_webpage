@@ -6,11 +6,15 @@ import Footer from './components/layout/Footer'
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
+      <div className="m-[40px]">
+        <Navbar />
+      </div>
       <main className="grow flex flex-col">
         <AppRoutes />
       </main>
-      <Footer />
+      <div className="m-[40px]">
+        <Footer />
+      </div>
     </BrowserRouter>
   )
 }

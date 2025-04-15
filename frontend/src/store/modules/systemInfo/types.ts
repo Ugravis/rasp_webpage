@@ -6,7 +6,7 @@ export interface SystemInfo {
   architecture: string
   machine: string
   cpu: string
-  spuTemperature: number | null
+  cpuTemperature: number | null
   cpuPercentUsed: number
   cpuFreq: number,
   uptime: number

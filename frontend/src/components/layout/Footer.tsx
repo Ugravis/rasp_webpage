@@ -1,5 +1,9 @@
-export default function Footer() {
+import { JSX } from "react";
+
+export default function Footer(): JSX.Element {
   return (
-    <p>Ugravis 2025 ©</p>
+    <div className="flex justify-center">
+      <p>Ugravis 2025 ©</p>
+    </div>
   )
 }

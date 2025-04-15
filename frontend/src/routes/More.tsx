@@ -1,5 +1,7 @@
-export default function More() {
+import { JSX } from "react";
+
+export default function More(): JSX.Element {
   return (
-    <h4>More</h4>
+    <h4 className="text-center">Work in progress</h4>
   )
 }

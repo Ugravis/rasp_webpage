@@ -1,20 +1,21 @@
-import { useEffect } from "react"
-import { useSystemInfoStore } from "../store/useStore"
+import { JSX } from "react"
+import SystemInfo from "../components/content/SystemInfo"
 
-export default function Home() {
-  const { data, loading, error, fetchSystemInfo } = useSystemInfoStore()
-
-  useEffect(() => {
-    fetchSystemInfo()
-  }, [fetchSystemInfo])
-
-  if(loading) return <div>Loading...</div>
-  if(error) return <div>Une erreur est survenue</div>
+export default function Home(): JSX.Element {
 
   return (
     <>
-      <h2 className="text-2xl">Raspberry pi 4</h2>
-      <p>os: {data?.os}</p>
+      <div>
+        <div className="flex justify-center">
+          <img src="/images/logos/raspberry.png" alt="raspberry_logo" className="w-20" />
+        </div>
+
+        <h2 className="text-2xl text-center mt-[20px]"><b>Raspberry pi</b></h2>
+      </div>
+
+      <div className="grow flex flex-col justify-center">
+        <SystemInfo />
+      </div>
     </>
   )
 }

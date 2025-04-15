@@ -32,5 +32,5 @@ def get_system_info():
       "bytesUsed": disk.used,
       "total": disk.total
     },
-    "uptime": int(time.time() - psutil.boot_time()),
+    "uptime": psutil.boot_time(),
   }
