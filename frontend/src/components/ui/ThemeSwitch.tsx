@@ -20,7 +20,7 @@ export default function ThemeSwitch(): JSX.Element {
       metaTag.name = 'theme-color'
       document.head.appendChild(metaTag)
     }
-    metaTag.content = isDark ? '#0f172a' : '#ffffff'
+    metaTag.content = isDark ? '#050505' : '#ffffff'
   }
 
   const toggleTheme = (): void => {

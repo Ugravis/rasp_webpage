@@ -1,7 +1,6 @@
 // Timestamp
 
 const timeStampFormat = (date: number, formatType: 'min' | 'full' = 'min') => {
-  console.log(date)
   const formats = {
       s:   { min: 's', full: ' seconds' },
       min: { min: 'min', full: ' minutes' },
