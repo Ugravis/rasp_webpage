@@ -17,9 +17,10 @@ export default function Home() {
       <div className="flex gap-[50px]">
         <div className="flex flex-col gap-[40px]">
           <div>
-          <p className="mb-[10px]"><u><b>General</b></u></p>
+            <p className="mb-[10px]"><u><b>General</b></u></p>
             <p>Name: <span className="text-yellow-400">{data?.hostname}</span></p>
-            <p>Machine: <span className="text-yellow-400">{data?.platform}</span></p>
+            {/* Cette information étant plutôt grande, un style permet de la couper au dela de 220px */}
+            <p>Machine: <span className="text-yellow-400 truncate overflow-hidden whitespace-nowrap max-w-[220px] inline-block align-middle relative top-[-1px]">{data?.platform}</span></p> 
             <p>os: <span className="text-yellow-400">{data?.os}</span></p> 
             <p>Online for: <span className="text-cyan-400"><b>{data?.uptime !== undefined ? timeStampFormat(data.uptime, 'full') : 'N/A'}</b></span></p>
           </div>
