@@ -12,7 +12,7 @@ To display data like component characteristics, uptime, CPU heat, etc.
 ### **1. Run .backend/**  
 `python -m venv .venv`  
 `source .venv/bin/activate`  
-`pip install -r requirements.txt`
+`pip install -r requirements.txt`  
 `make start-prod`
 
 ### **2. Run frontend/**  
