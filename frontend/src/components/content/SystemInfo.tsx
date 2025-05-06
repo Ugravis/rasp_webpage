@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <div className="flex justify-center">
-      <div className="flex gap-[50px]">
+      <div className="flex gap-[50px] flex-wrap justify-center text-center sm:text-left">
         <div className="flex flex-col gap-[40px]">
           <div>
             <p className="mb-[10px]"><u><b>General</b></u></p>

@@ -9,7 +9,7 @@ function App() {
       <div className="m-[40px]">
         <Navbar />
       </div>
-      <main className="grow flex flex-col">
+      <main className="grow flex flex-col mx-[10vw]">
         <AppRoutes />
       </main>
       <div className="m-[40px]">
